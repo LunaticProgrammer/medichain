@@ -6,6 +6,7 @@ var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
 var mongodb = require('mongodb');
 var logger = require('morgan');
+var cors = require('cors');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -23,6 +24,9 @@ mongoose.connect("mongodb://localhost/ndim");
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(cors({ origin: ['localhost:8100'],
+      credentials : true
+}))
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
