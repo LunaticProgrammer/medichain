@@ -34,7 +34,7 @@ const subDistributorSchema = new mongoose.Schema({
     }
 })
 
-rawMatSchema.pre('save',function(next){
+subDistributorSchema.pre('save',function(next){
     
     const user = this
 

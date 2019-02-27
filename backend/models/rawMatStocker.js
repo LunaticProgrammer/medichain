@@ -52,6 +52,6 @@ rawMatStocker.pre('save',function(next){
     })
 });
 
-const rawMatStock = mongoose.model('rawMatStock', rawMatSchema);
+const rawMatStock = mongoose.model('rawMatStock', rawMatStocker);
 
 module.exports = rawMatStock;

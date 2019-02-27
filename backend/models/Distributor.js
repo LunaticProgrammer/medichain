@@ -34,7 +34,7 @@ const distributorSchema = new mongoose.Schema({
     }
 })
 
-distributor.pre('save',function(next){
+distributorSchema.pre('save',function(next){
     
     const user = this
 

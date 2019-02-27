@@ -6,48 +6,72 @@
 
 <ion-content padding>
   <div class="form-group">
-    <select class="form-control">
-        <option disabled>Category</option>
-        <option value="dist">Distributor</option>
-        <option value="fin"><a [routerLink]="[ '/login/login-fin-stock-manager']">FinStock</a></option>
-        <option value="hospital"><a [routerLink]="[ '/login/login-hospital']">Hospital</a></option>
-        <option value="manufact"><a [routerLink]="[ '/login/login-manufacturer']">Manufacturer</a></option>
-        <option value="pharma"><a [routerLink]="[ '/login/login-pharmaa']">Pharama</a></option>
-        <option value="rawMatCollect"><a [routerLink]="[ '/login/login-raw-mat-collector']">name</a></option>
-        <option value="rawMatStock"><a [routerLink]="[ '/login/login-raw-mat-stock']">RawMatStocker</a></option>
-        <option value="subDist"><a [routerLink]="[ '/login/login-sub-dist']">subDistributor</a></option>
-        <option value="transporter"><a [routerLink]="[ '/login/login-transporter']">Transporter</a></option>
-      </select>
+   
 
+  
+    <a [routerLink]="[ '/login/login-dist' ]">
+      <ion-chip>
+        <ion-icon name="arrow-forward"></ion-icon>
+        <ion-label>Distributor</ion-label>
+      </ion-chip>
+    </a><br>
 
-     <a [routerLink]="[ '/login/login-pharma' ]"> <ion-chip><ion-icon name="arrow-forward"></ion-icon>
+    <a [routerLink]="[ '/login/login-hospital' ]">
+      <ion-chip>
+        <ion-icon name="arrow-forward"></ion-icon>
+        <ion-label>Hospital</ion-label>
+      </ion-chip>
+    </a><br>
 
-        <ion-label>Default</ion-label>
-      </ion-chip></a>
+    <a [routerLink]="[ '/login/login-transporter' ]">
+      <ion-chip>
+        <ion-icon name="arrow-forward"></ion-icon>
+        <ion-label>Transporter</ion-label>
+      </ion-chip>
+    </a><br>
 
+    <a [routerLink]="[ '/login/login-sub-dist' ]">
       <ion-chip>
-        <ion-label color="secondary">Secondary Label</ion-label>
+        <ion-icon name="arrow-forward"></ion-icon>
+        <ion-label>SubDistributor</ion-label>
       </ion-chip>
-      
-      <ion-chip color="secondary">
-        <ion-label color="dark">Secondary w/ Dark label</ion-label>
-      </ion-chip>
-      
+    </a><br>
+
+    <a [routerLink]="[ '/login/login-raw-mat-stock' ]">
       <ion-chip>
-        <ion-icon name="pin"></ion-icon>
-        <ion-label>Default</ion-label>
+        <ion-icon name="arrow-forward"></ion-icon>
+        <ion-label>RawMaterialStocker</ion-label>
       </ion-chip>
-      
+    </a><br>
+
+    <a [routerLink]="[ '/login/login-raw-mat-collector' ]">
       <ion-chip>
-        <ion-icon name="heart" color="dark"></ion-icon>
-        <ion-label>Default</ion-label>
+        <ion-icon name="arrow-forward"></ion-icon>
+        <ion-label>RawMatCollector</ion-label>
       </ion-chip>
-      
+    </a><br>
+
+    <a [routerLink]="[ '/login/login-pharma' ]">
       <ion-chip>
-        <ion-label>Button Chip</ion-label>
-        <ion-icon name="close-circle"></ion-icon>
+        <ion-icon name="arrow-forward"></ion-icon>
+        <ion-label>Pharma</ion-label>
       </ion-chip>
-      
+    </a><br>
+
+    <a [routerLink]="[ '/login/login-manufacturer' ]">
+      <ion-chip>
+        <ion-icon name="arrow-forward"></ion-icon>
+        <ion-label>Manufacturer</ion-label>
+      </ion-chip>
+    </a><br>
+
+    <a [routerLink]="[ '/login/login-fin-stock-manager' ]">
+      <ion-chip>
+        <ion-icon name="arrow-forward"></ion-icon>
+        <ion-label>FinStockManager</ion-label>
+      </ion-chip>
+    </a><br>
+     
       
 </div>
 </ion-content>
